@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zimble-generator" />
+        <module name="zimble-auth" />
+        <module name="zimble-job" />
+        <module name="zimble-system" />
+        <module name="zimble-common" />
+        <module name="zimble-gateway" />
+        <module name="zimble-api" />
+        <module name="zimble-crm" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zimble-api" target="1.8" />
+      <module name="zimble-gen" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="zimble-auth" options="" />
+      <module name="zimble-common" options="" />
+      <module name="zimble-crm" options="" />
+      <module name="zimble-gateway" options="" />
+      <module name="zimble-gen" options="" />
+      <module name="zimble-generator" options="" />
+      <module name="zimble-job" options="" />
+      <module name="zimble-services" options="" />
+      <module name="zimble-system" options="" />
+    </option>
+  </component>
+</project>

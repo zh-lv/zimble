@@ -1,0 +1,53 @@
+# 项目相关配置
+zimble:
+  # 名称
+  name: zimble
+  # 版本
+  version: 1.1.0
+  # 版权年份
+  copyrightYear: 2020
+  # 实例演示开关
+  demoEnabled: false
+  # 文件路径 示例（ Windows配置D:/zimble/uploadPath，Linux配置 /home/zimble/uploadPath）
+  profile: D:/zimble/uploadPath
+  # 获取ip地址开关
+  addressEnabled: true
+
+# Tomcat
+server:
+  port: 9201
+
+# Spring
+spring:
+  application:
+    name: zimble-system
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.26.245.15:8848
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.26.245.14:3306/ry-cloud?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: 1qaz@WSX
+  redis:
+    host: 10.26.245.14
+    port: 6379
+    password:
+
+# Mybatis配置
+mybatis:
+  # 搜索指定包别名
+  typeAliasesPackage: com.zimble.system
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapperLocations: classpath:mapper/**/*.xml
+
+security:
+  oauth2:
+    client:
+      client-id: web
+      client-secret: 123456
+      scope: server
+    resource:
+      loadBalanced: true
+      token-info-uri: http://zimble-auth/oauth/check_token

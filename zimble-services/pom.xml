@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>zimble</artifactId>
+        <groupId>com.zimble</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>zimble-services</artifactId>
+    <packaging>pom</packaging>
+
+    <description>Demo project for Spring Boot</description>
+
+    <modules>
+        <module>zimble-system</module>
+        <module>zimble-generator</module>
+        <module>zimble-job</module>
+        <module>zimble-crm</module>
+    </modules>
+
+</project>

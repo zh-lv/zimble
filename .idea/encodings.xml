@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/zimble-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-auth/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-gateway/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-crm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-crm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-crm/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-generator/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-job/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-job/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-job/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zimble-services/zimble-system/src/main/resources/application.yml" charset="UTF-8" />
+  </component>
+</project>

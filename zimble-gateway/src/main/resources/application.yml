@@ -1,0 +1,60 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: zimble-gateway
+  redis:
+    host: 10.26.245.14
+    port: 6379
+    password:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.26.245.15:8848
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
+      routes:
+        # 认证中心
+        - id: zimble-auth
+          uri: lb://zimble-auth
+          predicates:
+            - Path=/auth/**
+          filters:
+            # 验证码处理
+            - ImageCodeFilter
+            - StripPrefix=1
+        # 代码生成
+        - id: zimble-generator
+          uri: lb://zimble-generator
+          predicates:
+            - Path=/gen/**
+          filters:
+            - StripPrefix=1
+        # 定时任务
+        - id: zimble-job
+          uri: lb://zimble-job
+          predicates:
+            - Path=/job/**
+          filters:
+            - StripPrefix=1
+        # 系统模块
+        - id: zimble-system
+          uri: lb://zimble-system
+          predicates:
+            - Path=/system/**
+          filters:
+            - StripPrefix=1
+
+security:
+  basic:
+    enabled: false
+
+feign:
+  sentinel:
+    enabled: true # 激活Sentinel对Feign的支持

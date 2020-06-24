@@ -1,0 +1,28 @@
+
+server:
+  port: 3002
+
+spring:
+  application:
+    name: zimble-auth
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.26.245.14:3306/ry-cloud?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: 1qaz@WSX
+  redis:
+    host: 10.26.245.14
+    port: 6379
+    password:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.26.245.15:8848
+
+#激活Sentinel对Feign的支持
+feign:
+  sentinel:
+    enabled: true
+  hystrix:
+    enabled: true
+
